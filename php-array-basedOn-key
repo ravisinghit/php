@@ -1,0 +1,23 @@
+$a1=array("a",8989);
+$a2=array("b",1212);
+$arr = array_merge_recursive($a1,$a2);
+
+echo "<pre>";
+echo "test here1";
+print_r($a1);
+echo "test here2"; 
+print_r($a2); 
+echo "test here3";
+print_r($arr);
+
+// combine two array and created new array
+$a = array('a', 121212');
+$b = array('b', 232323);
+$c = array_combine($a, $b);
+$newarr = array();
+$key1 = array_keys($c);
+foreach($c as $key => $value){
+$newarr[] = $key ." ".$value;
+}
+echo "<pre>";
+print_r($newarr);
